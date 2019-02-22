@@ -1,0 +1,10 @@
+{
+    "/insta": {
+        "target": "http://starlord.hackerearth.com/insta",
+        "secure": true,
+        "changeOrigin": true,
+        "pathRewrite": {
+            "^/insta": ""
+        }
+    }
+}

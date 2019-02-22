@@ -1,0 +1,30 @@
+<div class="ui-g ui-fluid">
+  <div class="ui-g-12">
+    <div class="ui-g-3">
+      <!-- Left -->
+    </div>
+    <div class="ui-g-6">
+      <div class="ui-g-3">
+        <img src="./../assets/images/dp.jpg" width="100px" style="border-radius: 50%">
+      </div>
+      <div class="ui-g-7">
+        <div class="pad-top20">
+          <span class="font-family">karthik_varma_k <span class="follow">Follow</span></span>
+        </div>
+        <div class="pad-top20 font-family">
+          <b>Karthik Varma </b> #Trying to understand things!!
+        </div>
+      </div>
+      <div class="ui-g-12">
+        <div class="ui-g-4 container" *ngFor="let image of instagramModel.imageList">
+            <img src="{{image.Image}}" width="200" height="200" class="image" routerLink="/" routerLinkActive="active">
+            <button class="btn"><i class="fa fa-trash" aria-hidden="true"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="ui-g-2">
+      <!-- Right -->
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
